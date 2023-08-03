@@ -1,0 +1,94 @@
+/*========== Section Events ==========*/
+.section-events {
+    padding-top: 55px;
+    padding-bottom: 120px;
+}
+
+.events__container {
+    max-width: 1450px;
+}
+
+.events__title {
+    margin-bottom: 25px;
+}
+
+.events__list {
+    margin-bottom: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.events__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.events__item .title-3 {
+    font-size: 40px;
+}
+
+.events__item > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.events__img {
+    max-height: 407px;
+}
+
+.events__description {
+    max-width: 800px;
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+/*========== end Section Events ==========*/
+
+/*========== Paginations ==========*/
+.pagination-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pagination-list__btn::before {
+    content: '';
+    color: var(--blue);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.pagination-list__btn.prev::before {
+    content: '<';
+}
+
+.pagination-list__btn.next::before {
+    content: '>';
+}
+
+.pagination-list__link {
+    padding: 3px 17px;
+    border-radius: 30px;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--blue);
+    background-color: inherit;
+}
+
+.pagination-list__link.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/*========== end Paginations ==========*/

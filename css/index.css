@@ -1,0 +1,151 @@
+/*========== Section Slider ==========*/
+.splide__slide {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+}
+.splide__img {
+    max-height: 570px;
+}
+
+.splide__description {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*background-image: url("../images/slides/1.png");*/
+    background-size: 0;
+    padding: 30px;
+}
+
+.splide__description::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-image: inherit;
+    background-position: center right;
+    background-repeat: no-repeat;
+    filter: blur(30px);
+}
+
+.splide__title {
+    position: relative;
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.splide__list {
+    position: relative;
+}
+
+.splide__arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 45px;
+}
+
+.splide__arrows button {
+    cursor: pointer;
+}
+/*========== end Section Slider ==========*/
+
+/*========== Section About Portal ==========*/
+.section-about-us {
+    padding: 80px 0;
+}
+
+.about-us__container {
+    max-width: 1430px;
+}
+
+.about-us__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-us__description {
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.about-us__title {
+    margin-bottom: 33px;
+}
+
+.about-us__info div:first-child {
+    max-width: 768px;
+}
+
+.about-us__list {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.about-us__item span {
+    color: #146C94;
+    font-size: 96px;
+    font-weight: 500;
+}
+
+.about-us__item p {
+    color: var(--blue);
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/*========== end Section About Portal ==========*/
+
+/*========== Section Partners ==========*/
+.section-partners {
+    padding: 80px 0;
+    background-color: var(--green);
+}
+
+.partners__container {
+    max-width: 1430px;
+    display: flex;
+    flex-direction: column;
+}
+
+.partners__title {
+    margin-bottom: 48px;
+}
+
+.partners__list {
+    margin-bottom: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 85px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners__btn {
+    display: inline-block;
+    align-self: center;
+    padding: 15px 140px;
+    border: 1px solid var(--blue);
+    border-radius: 80px;
+    color: var(--blue);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+/*========== end Section Partners ==========*/

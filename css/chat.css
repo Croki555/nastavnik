@@ -1,0 +1,141 @@
+.section-chat {
+    padding: 70px 0;
+}
+
+.chat__container {
+    max-width: 1450px;
+}
+
+.chat__block-titles {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.chat__title-role {
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.chat__title-role span {
+    border-radius: 15px;
+    background-color: var(--green-light);
+    padding: 9px;
+}
+
+.chat__link::before {
+    content: '';
+    display: inline-block;
+    /*border-radius: 50%;*/
+    /*border: 2px solid var(--blue);*/
+    width: 107px;
+    height: 107px;
+    background-repeat: no-repeat;
+    background-size: 98px 98px;
+    background-position: center;
+}
+
+.chat-mentor::before {
+    background-image: url("../images/icons/mentor-icon.png");
+}
+
+.chat-student::before {
+    background-image: url("../images/icons/student-icon.png");
+}
+
+.chat__list {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-light);
+    padding: 30px;
+    max-height: 750px;
+    overflow-y: auto;
+    row-gap: 20px;
+}
+
+.chat__item {
+    display: flex;
+    column-gap: 30px;
+}
+
+.chat__link {
+    height: 100%;
+}
+
+.chat__item-mentor {
+    align-self: flex-start;
+}
+
+.chat__item-student {
+    align-self: end;
+    flex-direction: row-reverse;
+}
+
+.chat__message {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.chat__description {
+    border-radius: 15px;
+    background-color: var(--green);
+    padding: 25px;
+    max-width: 400px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.chat-message-active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+.chat__time {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.chat__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+}
+
+.chat__input {
+    padding: 12px 25px;
+    flex-grow: 1;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    background-color: var(--green);
+    border-radius: 15px;
+}
+
+.chat__input::placeholder {
+    color: var(--blue);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.chat__btn {
+    max-width: 210px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 12.5px 33px;
+    background-color: var(--blue);
+}
+
+

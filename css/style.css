@@ -1,0 +1,288 @@
+@import url('./fonts.css');
+/* Основные стили */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #86CBB9;
+    --green-light: #B9EEDE;
+    --blue: #577D86;
+    --blue-dark: #3e5f63;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+button {
+    background: inherit;
+}
+
+.container {
+    max-width: 1830px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-none {
+    display: none!important;
+}
+
+.title-1 {
+    margin: 0;
+    color: var(--blue);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.title-2 {
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.title-3 {
+    color: var(--blue);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/*<Логотип>*/
+.logo {
+    display: inline-block;
+    width: 335px;
+    height: 115px;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+/*</Логотип>*/
+
+/*========== Header ==========*/
+.header {
+    background-color: var(--green-light);
+}
+
+.header__container {
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .nav__list {
+    gap: 47px;
+}
+
+.nav__link {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.private-office {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+
+.private-office__link-register {
+    color: var(--blue);
+}
+
+.private-office__link-login {
+    padding: 10px 22px;
+    border-radius: 15px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.private-office__link {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/*========== end Header ==========*/
+
+/*========== Section Help ==========*/
+.section-help {
+    background-color: var(--green);
+}
+
+.section-help__container {
+    max-width: 100%;
+    padding: 25px 0;
+}
+
+.help__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 95px;
+}
+
+.help__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.help__link span {
+    color: var(--blue-dark);
+}
+/*========== end Section Help ==========*/
+
+/*========== Footer ==========*/
+.footer {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: var(--green-light);
+}
+
+.footer__container {
+    max-width: 1630px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__block-left * {
+    color: var(--blue);
+}
+
+.footer__block-left div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.footer .logo {
+    margin-bottom: 25px;
+}
+
+
+.user-agreement {
+    text-decoration: underline;
+}
+
+.footer__block-right {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 90px;
+    row-gap: 30px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-form .title-3 {
+    text-align: end;
+}
+
+.footer-form__input {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--green);
+    font-size: 14px;
+    width: 300px;
+}
+
+.footer-form__input::placeholder {
+    font-size: 14px;
+    color: var(--blue-dark);
+}
+
+.footer-form__btn {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    color: #B8EEDE;
+    background-color: #559CA9;
+}
+
+.footer-form > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer .nav__list {
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer .nav__link {
+    font-size: 20px;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 23px;
+}
+
+.footer__block-right > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social__link {
+    display: inline-flex;
+    align-items: center;
+}
+
+/*========== end Footer ==========*/
